@@ -1,4 +1,9 @@
+using Reservation.Infrastructure;
+using Reservation.Services;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<IReservationService, ReservationService>();
 
 // Add services to the container.
 
@@ -10,13 +15,13 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if(app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
