@@ -16,5 +16,5 @@ public class ReservationController : ControllerBase
 
 
     [HttpGet("{Id}")]
-    public Models.Reservation GetResById(Guid Id) { return reservationService.GetReservationById(Id); }
+    public Models.Reservation GetResById(int Id) { return reservationService.GetReservationById(Id); }
 }

@@ -2,8 +2,7 @@
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
-EXPOSE 80
-EXPOSE 443
+EXPOSE 7091
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
@@ -21,5 +20,6 @@ RUN dotnet publish "Reservation.API.csproj" -c Release -o /app/publish /p:UseApp
 
 FROM base AS final
 WORKDIR /app
+ENV ASPNETCORE_URLS=http://+:7001
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "Reservation.API.dll"]

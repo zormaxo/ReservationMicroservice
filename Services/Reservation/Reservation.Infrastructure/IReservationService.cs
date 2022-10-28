@@ -7,5 +7,5 @@ public interface IReservationService
 
     public Models.Reservation GetReservation();
 
-    public Models.Reservation GetReservationById(Guid Id);
+    public Models.Reservation GetReservationById(int Id);
 }

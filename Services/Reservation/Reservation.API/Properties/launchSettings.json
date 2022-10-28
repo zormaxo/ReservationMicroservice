@@ -1,14 +1,23 @@
-{
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:48149",
+      "sslPort": 44372
+    }
+  },
   "profiles": {
     "Reservation.API": {
       "commandName": "Project",
+      "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "api/reservation",
+      "applicationUrl": "http://localhost:7001;https://localhost:7219",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:7001;https://localhost:7219"
+      }
     },
     "IIS Express": {
       "commandName": "IISExpress",
@@ -17,22 +26,6 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
-    },
-    "Docker": {
-      "commandName": "Docker",
-      "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
-      "publishAllPorts": true,
-      "useSSL": true
-    }
-  },
-  "$schema": "https://json.schemastore.org/launchsettings.json",
-  "iisSettings": {
-    "windowsAuthentication": false,
-    "anonymousAuthentication": true,
-    "iisExpress": {
-      "applicationUrl": "http://localhost:48149",
-      "sslPort": 44372
     }
   }
 }

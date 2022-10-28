@@ -2,7 +2,7 @@
 
 public class Reservation
 {
-    public Guid Id { get; set; }
+    public int Id { get; set; }
 
     public DateTime? CheckInDate { get; set; }
 

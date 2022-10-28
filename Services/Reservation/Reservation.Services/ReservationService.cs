@@ -13,7 +13,7 @@ public class ReservationService : IReservationService
     {
         return new Models.Reservation()
         {
-            Id = Guid.NewGuid(),
+            Id = 5,
             ReservationDate = DateTime.Now,
             CheckInDate = DateTime.Now.Date.AddDays(30),
             CheckOutDate = DateTime.Now.Date.AddDays(37),
@@ -22,7 +22,7 @@ public class ReservationService : IReservationService
         };
     }
 
-    public Models.Reservation GetReservationById(Guid Id)
+    public Models.Reservation GetReservationById(int Id)
     {
         return new Models.Reservation()
         {
