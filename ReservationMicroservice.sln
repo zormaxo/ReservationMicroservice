@@ -21,11 +21,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contact.Models", "Services\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contact.Services", "Services\Contact\Contact.Services\Contact.Services.csproj", "{A30FDBFA-841D-4B4D-ABE1-9B947F4AAC07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.Infrastructure", "Services\Reservation\Reservation.Infrastructure\Reservation.Infrastructure.csproj", "{9450CD68-A4E0-4A3A-A8FC-8C87CEA4ED87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reservation.Infrastructure", "Services\Reservation\Reservation.Infrastructure\Reservation.Infrastructure.csproj", "{9450CD68-A4E0-4A3A-A8FC-8C87CEA4ED87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.Services", "Services\Reservation\Reservation.Services\Reservation.Services.csproj", "{4E96FE93-0074-4FB2-BF8A-BF80D42EA9FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reservation.Services", "Services\Reservation\Reservation.Services\Reservation.Services.csproj", "{4E96FE93-0074-4FB2-BF8A-BF80D42EA9FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.Models", "Services\Reservation\Reservation.Models\Reservation.Models.csproj", "{AF8E69BD-6D6E-4A6B-BC68-99A9CE421CD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reservation.Models", "Services\Reservation\Reservation.Models\Reservation.Models.csproj", "{AF8E69BD-6D6E-4A6B-BC68-99A9CE421CD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FB7004C1-0787-4CC1-B09D-F7215A3F7EEB}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

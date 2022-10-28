@@ -17,14 +17,12 @@
       ]
     },
     {
-
-
       "DownstreamPathTemplate": "/api/contact",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 9000
+          "Port": 7000
         }
       ],
       "UpstreamPathTemplate": "/contact",
@@ -36,7 +34,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 9001
+          "Port": 7001
         }
       ],
       "UpstreamPathTemplate": "/res",
